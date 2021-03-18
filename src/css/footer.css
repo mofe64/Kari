@@ -1,0 +1,22 @@
+.links-section {
+  height: 10%;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.icons {
+  display: flex;
+}
+.meta {
+  display: flex;
+  color: white;
+}
+
+.meta p {
+  padding-right: 5rem;
+}
+.meta a {
+  padding-right: 3rem;
+}
