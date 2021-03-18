@@ -1,0 +1,38 @@
+.menu {
+  display: flex;
+}
+.menu-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+.menu-left-top {
+  display: flex;
+}
+.menu-left h1 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+.menu-left button {
+  border: none;
+  outline: none;
+  font-size: 3rem;
+  margin-left: 2rem;
+  font-weight: 400;
+}
+.menu-dropdown {
+  width: 50%;
+}
+.menu-dropdown div {
+  background-color: #114ebb;
+  padding: 2rem 3rem;
+  font-size: 1.5rem;
+}
+.menu-dropdown div:not(:last-child) {
+  border-bottom: 0.6px solid white;
+}
+.menu-right {
+  width: 50%;
+}
