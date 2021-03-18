@@ -1,6 +1,8 @@
-const Button = ({text, extrastyles}) =>
-    <Button>
+import '../css/button.css';
+
+const Button = ({ text, extrastyles={} }) =>
+    <button className="btn" style={extrastyles}>
         {text}
-    </Button>
+    </button>
 
 export default Button;

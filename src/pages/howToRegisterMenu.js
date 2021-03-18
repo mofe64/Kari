@@ -29,8 +29,8 @@ const HowToRegisterMenu = function () {
                         (clicked)? {display: 'block'}: { display: 'none'}
                     }>
                         <div> <a href='/register/investor'> Register as an investor</a> </div>
-                        <div><a href='/register/investor'> Register as an trader</a> </div>
-                        <div><a href='/register/investor'> Register as an student</a> </div>
+                        <div><a href='/register/trader'> Register as a trader</a> </div>
+                        <div><a href='/register/student'> Register as a student</a> </div>
                     </div>
 
                 </div>

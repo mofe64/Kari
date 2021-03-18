@@ -7,7 +7,7 @@ import { withRouter } from 'react-router-dom'
 
 const Landing = withRouter(({ history }) => {
     return (
-        <div className="landingPage" style={{ background: `url(${bgImg}) #0D039C`, backgroundBlendMode: 'multiply', height: '100vh'}}>
+        <div className="landingPage" style={{ background: `url(${bgImg}) #0D039C`, backgroundBlendMode: 'lighten', height: '100vh'}}>
             <div className="hero-section">
                 <div className="hero-top">
                     <img src={logo}  alt="Kari Logo"/>
