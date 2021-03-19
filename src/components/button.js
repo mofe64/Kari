@@ -1,7 +1,10 @@
 import '../css/button.css';
 
-const Button = ({ text, extrastyles={} }) =>
-    <button className="btn" style={extrastyles}>
+const Button = ({ text, extrastyles={}, functionToExecute=(f)=>f }) =>
+    <button
+        className="btn"
+        style={extrastyles}
+        onClick={functionToExecute}>
         {text}
     </button>
 

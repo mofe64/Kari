@@ -10,8 +10,9 @@
 }
 .investor-main {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   height: 70vh;
   color: white;
   padding-left: 1rem;

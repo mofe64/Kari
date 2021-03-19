@@ -1,10 +1,23 @@
 import Header from './header';
 import Footer from './footer';
 import Button from '../components/button';
+import Modal from './modal';
 import '../css/investorRegister.css';
+import { useState } from 'react';
 
-const Investor = () =>
-    <div className="bg-img-investor">
+const Investor = () => {
+    const [registerButtonClicked, setRegisterButtonClicked] = useState(false);
+    const handleClick = () => {
+        if (!registerButtonClicked) {
+            setRegisterButtonClicked(true);
+            // document.addEventListener('click', closeModal)
+        }
+    }
+    const closeModal = () => {
+        setRegisterButtonClicked(false);
+    }
+    return (
+        <div className="bg-img-investor">
         <Header/>
         <div className='investor-main'>
             <div className='investor-main-left'>
@@ -18,13 +31,18 @@ const Investor = () =>
                     tincidunt nec, interdum quis ante. Integer eu ultrices mauris, ac <br />
                     elementum nisi
                 </p>
-                <Button text="Register Now" extrastyles={{ padding: '10px 27px' } }/>
+                <Button text="Register Now" extrastyles={{ padding: '10px 27px' }} functionToExecute={ handleClick}/>
             </div>
-            <div className='investor-main-right'>
-
-            </div>
+           
+            
+                <Modal show={ registerButtonClicked}/>
         </div>
         <Footer/>
     </div>
+    )
+    
+ }
+
+   
 
 export default Investor;

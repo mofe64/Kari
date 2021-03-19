@@ -26,7 +26,7 @@ const HowToRegisterMenu = function () {
                         </button>
                     </div>
                     <div className='menu-dropdown' style={
-                        (clicked)? {display: 'block'}: { display: 'none'}
+                        (clicked)? {visibility: 'visible'}: { visibility: "hidden"}
                     }>
                         <div> <a href='/register/investor'> Register as an investor</a> </div>
                         <div><a href='/register/trader'> Register as a trader</a> </div>
