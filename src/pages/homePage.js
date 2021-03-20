@@ -16,8 +16,12 @@ const Home = function () {
                         Suspendisse sed erat vitae dolor pharetra finibus. Suspendisse .
                     </p>
                     <div className='cta'>
-                        <button> Become an investor </button>
-                        <button> Register as a trader</button>
+                        <button>
+                            <a href="/register/investor">Become an investor</a>
+                        </button>
+                        <button>
+                            <a href="/register/trader">Register as a trader</a>
+                        </button>
                     </div>
                 </div>
                 <div className='main-right'>

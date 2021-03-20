@@ -15,7 +15,7 @@ const Modal = ({show=false}) =>
                 <p>* Required</p>
             </div>
             
-            <form className="form">
+            {/* <form className="form">
                 <div className='form-title'>
                     <input type='text' placeholder='Title *' required/>
                 </div>
@@ -35,7 +35,7 @@ const Modal = ({show=false}) =>
                     <Button text="BACK" />
                     <Button text="NEXT"/>
                 </div>
-                </form>
+                </form> */}
            
         </div>
     </div>
